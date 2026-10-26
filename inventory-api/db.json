@@ -1,0 +1,37 @@
+{
+  "categories": [
+    { "id": 1, "name": "Electrónica", "description": "Dispositivos, periféricos y accesorios tecnológicos", "status": "active" },
+    { "id": 2, "name": "Hogar", "description": "Electrodomésticos y artículos de cocina", "status": "active" },
+    { "id": 3, "name": "Papelería", "description": "Útiles escolares y de oficina", "status": "active" },
+    { "id": 4, "name": "Deportes", "description": "Implementos deportivos y de entrenamiento", "status": "active" },
+    { "id": 5, "name": "Juguetes", "description": "Juguetes y juegos de mesa", "status": "inactive" }
+  ],
+  "suppliers": [
+    { "id": 1, "name": "TecnoAndina SAS", "documentNumber": "900123456-7", "email": "ventas@tecnoandina.com", "phone": "+57 604 444 1020", "address": "Carrera 43A #1-50, Medellín", "status": "active" },
+    { "id": 2, "name": "Distribuidora del Valle Ltda", "documentNumber": "800987654-3", "email": "pedidos@distrivalle.com", "phone": "+57 602 555 3040", "address": "Calle 5 #38-25, Cali", "status": "active" },
+    { "id": 3, "name": "Hogar Total SA", "documentNumber": "901456789-1", "email": "comercial@hogartotal.co", "phone": "+57 601 600 7080", "address": "Avenida 68 #24-10, Bogotá", "status": "active" },
+    { "id": 4, "name": "Papelería Central", "documentNumber": "890321654-9", "email": "contacto@papeleriacentral.co", "phone": "+57 300 123 4567", "address": "Calle 50 #45-12, Medellín", "status": "inactive" }
+  ],
+  "products": [
+    { "id": 1, "sku": "ELE-0001", "name": "Mouse inalámbrico", "description": "Mouse ergonómico 2.4GHz con receptor USB", "categoryId": 1, "supplierId": 1, "costPrice": 25000, "salePrice": 39900, "stock": 45, "minStock": 10, "status": "active", "imageUrl": "https://picsum.photos/seed/ELE-0001/300" },
+    { "id": 2, "sku": "ELE-0002", "name": "Teclado mecánico", "description": "Teclado mecánico retroiluminado, switches rojos", "categoryId": 1, "supplierId": 1, "costPrice": 120000, "salePrice": 189900, "stock": 12, "minStock": 5, "status": "active", "imageUrl": "https://picsum.photos/seed/ELE-0002/300" },
+    { "id": 3, "sku": "ELE-0003", "name": "Audífonos Bluetooth", "description": "Audífonos inalámbricos con cancelación de ruido", "categoryId": 1, "supplierId": 2, "costPrice": 80000, "salePrice": 129900, "stock": 4, "minStock": 8, "status": "active", "imageUrl": "https://picsum.photos/seed/ELE-0003/300" },
+    { "id": 4, "sku": "HOG-0001", "name": "Licuadora 600W", "description": "Licuadora de 5 velocidades con vaso de vidrio", "categoryId": 2, "supplierId": 3, "costPrice": 110000, "salePrice": 169900, "stock": 20, "minStock": 5, "status": "active", "imageUrl": "https://picsum.photos/seed/HOG-0001/300" },
+    { "id": 5, "sku": "HOG-0002", "name": "Juego de sartenes x3", "description": "Sartenes antiadherentes de 20, 24 y 28 cm", "categoryId": 2, "supplierId": 3, "costPrice": 95000, "salePrice": 149900, "stock": 0, "minStock": 4, "status": "active", "imageUrl": "https://picsum.photos/seed/HOG-0002/300" },
+    { "id": 6, "sku": "HOG-0003", "name": "Lámpara LED de escritorio", "description": "Lámpara LED con brazo flexible y 3 tonos de luz", "categoryId": 2, "supplierId": 1, "costPrice": 38000, "salePrice": 64900, "stock": 25, "minStock": 8, "status": "inactive", "imageUrl": "https://picsum.photos/seed/HOG-0003/300" },
+    { "id": 7, "sku": "PAP-0001", "name": "Cuaderno argollado 100 hojas", "description": "Cuaderno cuadriculado tamaño carta", "categoryId": 3, "supplierId": 4, "costPrice": 6500, "salePrice": 11900, "stock": 150, "minStock": 30, "status": "active", "imageUrl": "https://picsum.photos/seed/PAP-0001/300" },
+    { "id": 8, "sku": "PAP-0002", "name": "Bolígrafos x12", "description": "Caja de 12 bolígrafos de tinta negra", "categoryId": 3, "supplierId": 4, "costPrice": 9000, "salePrice": 16500, "stock": 80, "minStock": 20, "status": "active", "imageUrl": "https://picsum.photos/seed/PAP-0002/300" },
+    { "id": 9, "sku": "DEP-0001", "name": "Balón de fútbol", "description": "Balón profesional talla 5", "categoryId": 4, "supplierId": 2, "costPrice": 45000, "salePrice": 79900, "stock": 18, "minStock": 6, "status": "active", "imageUrl": "https://picsum.photos/seed/DEP-0001/300" },
+    { "id": 10, "sku": "DEP-0002", "name": "Mancuernas 5 kg (par)", "description": "Par de mancuernas recubiertas en neopreno", "categoryId": 4, "supplierId": 2, "costPrice": 70000, "salePrice": 115000, "stock": 7, "minStock": 5, "status": "active", "imageUrl": "https://picsum.photos/seed/DEP-0002/300" }
+  ],
+  "stockMovements": [
+    { "id": 1, "productId": 1, "type": "IN", "quantity": 50, "reason": "Compra a proveedor", "createdAt": "2026-10-01T09:15:00.000Z", "userId": 1, "reference": "FAC-1001" },
+    { "id": 2, "productId": 1, "type": "OUT", "quantity": 5, "reason": "Venta", "createdAt": "2026-10-03T14:40:00.000Z", "userId": 1, "reference": "VEN-2001" },
+    { "id": 3, "productId": 3, "type": "IN", "quantity": 10, "reason": "Compra a proveedor", "createdAt": "2026-10-05T10:00:00.000Z", "userId": 1, "reference": "FAC-1002" },
+    { "id": 4, "productId": 3, "type": "OUT", "quantity": 6, "reason": "Venta", "createdAt": "2026-10-10T16:20:00.000Z", "userId": 2, "reference": "VEN-2002" },
+    { "id": 5, "productId": 5, "type": "IN", "quantity": 8, "reason": "Compra a proveedor", "createdAt": "2026-10-06T08:30:00.000Z", "userId": 1, "reference": "FAC-1003" },
+    { "id": 6, "productId": 5, "type": "OUT", "quantity": 8, "reason": "Venta", "createdAt": "2026-10-15T11:45:00.000Z", "userId": 2, "reference": "VEN-2003" },
+    { "id": 7, "productId": 10, "type": "OUT", "quantity": 1, "reason": "Ajuste por conteo físico", "createdAt": "2026-10-20T17:00:00.000Z", "userId": 1, "reference": "AJU-0001" },
+    { "id": 8, "productId": 7, "type": "IN", "quantity": 100, "reason": "Compra a proveedor", "createdAt": "2026-10-22T09:00:00.000Z", "userId": 1, "reference": "FAC-1004" }
+  ]
+}
